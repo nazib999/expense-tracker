@@ -85,7 +85,7 @@ const Tables =  ({expenses, setExpenses}:ExProps) => {
                         <TableCell className="font-medium">{exp.title}</TableCell>
                         <TableCell>{exp.amount}</TableCell>
                         <TableCell>{exp.category}</TableCell>
-                        <TableCell >{new Date(exp.date).toISOString().split("T")[0]}</TableCell>
+                        <TableCell >{exp.date && new Date(exp.date).toISOString().split("T")[0]}</TableCell>
                         <TableCell className="text-right space-x-2">
                             <Button className={'bg-primary'} onClick={() => openEdit(exp)}>Edit</Button>
                             <Button className={'bg-red-700'} onClick={()=>handleDelete(exp._id)}>Delete</Button>
