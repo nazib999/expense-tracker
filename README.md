@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full-Stack Next.js App
 
-## Getting Started
+This repository contains a full-stack Next.js application (App Router) with a built-in backend powered by Next.js API routes and MongoDB (via Mongoose). It includes user authentication (register, login, logout, session/me) and a React-based frontend with Tailwind CSS and various UI utilities.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Frontend: Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS
+- Backend: Next.js API Routes, Mongoose 8, MongoDB 6
+- Auth: JSON Web Tokens (JWT), HttpOnly cookies
+- Forms & Validation: react-hook-form, zod
+- Charts/UI: recharts, radix-ui, lucide-react
+- Tooling: ESLint, TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Monorepo vs Split Apps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is a single Next.js app where:
+- Frontend runs on http://localhost:3000
+- Backend API routes are available under http://localhost:3000/api
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You do not need to run a separate server. The API and frontend run together.
 
-## Learn More
+## Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18.18+ or 20+ (recommended)
+- npm 9+ (this repo uses npm)
+- A MongoDB instance (local or hosted, e.g., MongoDB Atlas)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a .env.local file in the project root with:
