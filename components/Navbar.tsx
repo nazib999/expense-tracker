@@ -23,10 +23,10 @@ const Navbar = async () => {
           {!isAuthed ? (
             <div className="flex items-center gap-3">
               <Link href="/login">
-                <Button className={'rounded-2xl ring-2 bg-cyan-700'}>Sign In</Button>
+                <Button className={'rounded-2xl ring-1  bg-cyan-900'}>Sign In</Button>
               </Link>
               <Link href="/register">
-                <Button variant="outline" className={'rounded-2xl bg-cyan-600'}>Register</Button>
+                <Button variant="outline" className={'rounded-2xl ring-1 bg-cyan-900'}>Register</Button>
               </Link>
             </div>
           ) : (
