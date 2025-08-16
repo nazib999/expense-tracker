@@ -16,7 +16,7 @@ const Page = () => {
             const data = await getTrackers();
             setExpenses(data);
         };
-        fetchData();
+         fetchData();
     }, []);
 
     useEffect(()=>{
@@ -26,7 +26,7 @@ const Page = () => {
 
     },[expenses])
     return (
-        <main className={'main-container'}>
+        <main className={'main-container mt-15'}>
             <div className={'flex justify-between items-center max-sm:flex-col'}>
 
             <h1 className={'my-4 font-semibold text-2xl'}>Total Expenses : ${total} </h1>

@@ -3,7 +3,7 @@ import React, { useEffect, useState} from 'react'
 import {getTrackers, searchTrackerByCategory, searchTrackers} from "@/lib/tracker.action";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 
-const categories = ['All','food', 'transport', 'entertainment', 'health', 'education', 'shopping', 'other']
+const categories = ['All','food', 'transport', 'entertainment', 'health', 'education', 'shopping', 'others']
 
 const SearchByCategory = ({expenses: _expenses, setExpenses}:ExProps) => {
     const [search, setSearch] = useState('All');

@@ -33,7 +33,7 @@ import {
 import {createTracker} from "@/lib/tracker.action";
 
 
-const categories = ['food', 'transport', 'entertainment', 'health', 'education', 'shopping', 'other']
+const categories = ['food', 'transport', 'entertainment', 'health', 'education', 'shopping', 'others']
 
 
 
@@ -183,7 +183,7 @@ const MainForm = ({expenses, setExpenses}:ExProps) => {
                     )}
                 />
                 </div>
-                <Button type="submit" className={' w-full !mt-5'}>Submit</Button>
+                <Button type="submit" className={' w-full !mt-10 items-end'}>Submit</Button>
             </form>
         </Form>
         </Card>
