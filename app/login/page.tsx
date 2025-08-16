@@ -51,7 +51,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="main-container  py-10">
+    <div className="main-container  py-10 mt-20">
       <Card className={'dark max-w-md mx-auto my-auto text-center w-full p-4'}>
         <h1 className="text-2xl font-semibold mb-6">Sign in</h1>
         <Form {...form} >

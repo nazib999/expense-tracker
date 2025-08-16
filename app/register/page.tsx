@@ -52,7 +52,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="main-container py-10 ">
+    <div className="main-container py-10 mt-20">
       <Card className="max-w-md mx-auto my-auto dark shadow p-6 rounded">
         <h1 className="text-2xl font-semibold mb-6">Create account</h1>
         <Form {...form}>
